@@ -1,4 +1,5 @@
 {
+  "homepage": "https://fachinmax.github.io/interactive-rating-component",
   "name": "interactive-rating-component-main",
   "version": "1.0.0",
   "description": "![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)",
@@ -8,14 +9,17 @@
   },
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "start": "parcel --public-url './'",
+    "build": "parcel build --public-url './'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3",
+    "gh-pages": "^5.0.0",
     "parcel": "^2.8.3",
     "parcel-bundler": "^1.12.5"
   }
