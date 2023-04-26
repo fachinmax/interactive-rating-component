@@ -1,0 +1,32 @@
+@use '../base/typography';
+@use '../abstracts/colors';
+
+
+h1 {
+    color: map-get(colors.$colors, 'white');
+    font-weight: map-get(typography.$font-weight, 'regular');
+    margin: 30px 0 10px 0;
+}
+
+.text {
+    color: map-get(colors.$colors, 'light-grey');
+    font-size: map-get(typography.$fonts-size, 'paragraph');
+    line-height: 25px;
+}
+
+.rating-container__item {
+    color: map-get(colors.$colors, 'light-grey');
+}
+
+.center {
+    text-align: center;
+}
+
+.result__rate {
+    color: map-get(colors.$colors, 'orange');
+    background-color: map-get(colors.$colors, 'dark-blue');
+    border-radius: 20px;
+    padding: 7px 15px;
+    margin: 25px auto 0;
+    font-size: map-get(typography.$fonts-size, 'paragraph');
+}

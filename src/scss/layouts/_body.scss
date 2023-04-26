@@ -1,0 +1,9 @@
+@use '../abstracts/mixed';
+@use '../abstracts/colors';
+
+
+body {
+    min-height: 100vh;
+    @include mixed.position-center(column, center);
+    background-color: map-get(colors.$colors, 'very-dark-blue');
+}

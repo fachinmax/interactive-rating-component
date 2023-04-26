@@ -1,0 +1,15 @@
+@use '../abstracts/colors';
+@use '../base/typography';
+
+
+.attribution {
+    position: absolute;
+    font-size: map-get(typography.$fonts-size, 'footer');
+    text-align: center;
+    bottom: 20px;
+    color: map-get(colors.$colors, 'white');
+}
+
+.attribution a {
+    color: map-get(colors.$colors, 'blue');
+}

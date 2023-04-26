@@ -1,0 +1,11 @@
+@use '../abstracts/colors';
+@use '../abstracts/mixed';
+
+
+.circle {
+    background-color: map-get(colors.$colors, 'medium-grey');
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    @include mixed.position-center(row, center);
+}

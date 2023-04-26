@@ -1,0 +1,17 @@
+@use '../abstracts/colors';
+@use '../abstracts/mixed';
+
+
+button {
+    background-color: map-get(colors.$colors, 'orange');
+    border: 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 18px;
+    color: map-get(colors.$colors, 'white');
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    &:hover {
+        @include mixed.change-state('white', 'orange');
+    }
+}

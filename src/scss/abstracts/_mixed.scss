@@ -1,0 +1,16 @@
+@use 'colors';
+@use 'cursor';
+
+
+@mixin position-center($direction, $position) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $position;
+    align-items: center;
+}
+
+@mixin change-state($backgroud, $text) {
+    background-color: map-get(colors.$colors, $backgroud);
+    color: map-get(colors.$colors, $text);
+    cursor: cursor.$cursor-over-element;
+}

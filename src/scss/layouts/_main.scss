@@ -1,0 +1,40 @@
+@use '../abstracts/colors';
+@use '../abstracts/mixed';
+
+
+main {
+    @include mixed.position-center(column, center);
+}
+
+section {
+    height: 400px;
+    width: 400px;
+    // background-image: linear-gradient(map-get(colors.$colors, 'dark-blue'), map-get(colors.$colors, 'very-dark-blue'));
+    background-color: map-get(colors.$colors, 'dark-blue');
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.result {
+    @include mixed.position-center(column, center);
+}
+
+.rating-container {
+    margin: 30px 0;
+    @include mixed.position-center(row, space-between);
+
+    &__item {
+
+        &:focus {
+            @include mixed.change-state('light-grey', 'white');
+        }
+
+        &:hover {
+            @include mixed.change-state('orange', 'white');
+        }
+    }
+}
+
+figure {
+    @include mixed.position-center(row, center);
+}
