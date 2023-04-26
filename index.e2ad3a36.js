@@ -1,2 +1,0 @@
-const showResult=e=>{console.log("ok"),e?(resultSection.style.display="flex",choiceSection.style.display="none"):(resultSection.style.display="none",choiceSection.style.display="block")},setRate=e=>{document.querySelector("span").innerHTML=e};let resultSection=document.querySelector(".result"),choiceSection=document.querySelector(".choices");showResult(!1),resultSection.addEventListener("click",(()=>{showResult(!1)}));
-//# sourceMappingURL=index.e2ad3a36.js.map
