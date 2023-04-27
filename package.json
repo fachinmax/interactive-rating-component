@@ -11,8 +11,8 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "start": "parcel --public-url './'",
-    "build": "parcel build --public-url './'"
+    "start": "parcel",
+    "build": "parcel build --public-url ./"
   },
   "keywords": [],
   "author": "",
